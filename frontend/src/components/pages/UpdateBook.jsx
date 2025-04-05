@@ -38,7 +38,7 @@ const submit = async()=>{
             alert("All fields are required");
         }else{
             const response = await axios.put(
-                "http://localhost:1000/api/v1/update-book",
+                "https://bookheaven-rpnh.onrender.com/api/v1/update-book",
                 Data,
                 {headers}
             );
