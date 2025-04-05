@@ -3,6 +3,8 @@ import Loader from '../Loader/Loader';
 import axios from 'axios';
 import { AiFillDelete } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
+import EmptyCart from '../../assets/EmptyCart.png';
+
 
 
 function Cart() {
@@ -28,7 +30,7 @@ function Cart() {
   },[Cart]);
 
   const deleteItem = async(bookid)=>{
-      const response = await axios.put(`http://localhost:1000/api/v1/remove-from-cart/${bookid}`,
+      const response = await axios.put(`https://bookheaven-rpnh.onrender.com/api/v1/remove-from-cart/${bookid}`,
         {},
         {headers},
       );
@@ -50,7 +52,7 @@ function Cart() {
   const PlaceOrder = async ()=>{
     try {
       const response = await axios.post(
-        `http://localhost:1000/api/v1/place-order`,
+        `https://bookheaven-rpnh.onrender.com/api/v1/place-order`,
         {order:Cart},
         {headers},
       );
@@ -72,7 +74,7 @@ function Cart() {
               Empty Cart
             </h1>
             <img 
-              src="src/assets/emptyCart.png" 
+              src={EmptyCart}
               alt="empty cart"
               className='lg:h-[50vh]'
             />
