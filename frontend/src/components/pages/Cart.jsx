@@ -19,7 +19,7 @@ function Cart() {
   useEffect(()=>{
     const fetch =  async()=>{
       const res = await axios.get(
-        "http://localhost:1000/api/v1/get-user-cart",
+        "https://bookheaven-rpnh.onrender.com/api/v1/get-user-cart",
         {headers}
       );
       setCart(res.data.data);
