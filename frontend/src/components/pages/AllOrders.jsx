@@ -25,7 +25,7 @@ function AllOrders() {
     const submitChanges = async(index)=>{
         const id = AllOrders[index]._id;
         const response =  await axios.put(
-            `http://localhost:1000/api/v1/update-status/${id}`,
+            `https://bookheaven-rpnh.onrender.com/api/v1/update-status/${id}`,
             Values,
             {headers}
         );
@@ -35,7 +35,7 @@ function AllOrders() {
     useEffect(() => {
       const fetch = async ()=>{
         const response = await axios.get(
-            "http://localhost:1000/api/v1/get-all-orders",
+            "https://bookheaven-rpnh.onrender.com/api/v1/get-all-orders",
             {headers}
         );
         setAllOrders(response.data.data);
