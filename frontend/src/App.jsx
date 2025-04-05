@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import AllBooks from './components/pages/AllBooks'
-import LogIn from './components/pages/Login'
+import LogIn from './components/pages/LogIn'
 import SignUp from './components/pages/SignUp'
 import Profile from './components/pages/Profile'
 import Cart from './components/pages/Cart'
