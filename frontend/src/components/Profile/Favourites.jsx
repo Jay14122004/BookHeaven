@@ -1,7 +1,10 @@
+
 import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 import BookCard from '../BookCard/BookCard';
+import star from '../../assets/star.png';
+
 
 
 function Favourites() {
@@ -29,7 +32,7 @@ function Favourites() {
        {FavouriteBooks && FavouriteBooks.length === 0 && (
         <div className='text-5xl font-semibold w-full flex-col h-[100%] text-zinc-500 flex justify-center items-center'>
         No favourite Books
-        <img src="/src/assets/star.png" alt="star" className='h-[20vh]'/>
+        <img src={star} alt="star" className='h-[20vh]'/>
         </div>)}
        <div className='grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 h-auto gap-4'>
      
