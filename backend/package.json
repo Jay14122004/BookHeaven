@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "build":"rm -rf node_modules && npm install",
+    "build":"rm -rf node_modules && npm install"
   },
   "author": "",
   "license": "ISC",
