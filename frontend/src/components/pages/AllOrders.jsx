@@ -88,18 +88,18 @@ function AllOrders() {
                     </div>
                     <div className='w-[40%] md:w-[22%]'>
                         <Link
-                            to={`/view-book-details/${items.book._id}`}
+                            to={`/view-book-details/${items.book?._id}`}
                             className='hover:text-blue-300'
                         >
-                            {items.book.title}
+                            {items.book?.title}
                         </Link>
                     </div>
                     <div className='w-0 md:w-[45%] hidden md:block'>
-                        <h1 className=''>{items.book.desc.slice(0,50)} ...</h1>
+                        <h1 className=''>{items.book?.desc.slice(0,50)} ...</h1>
                     </div>
                     <div className='w-[17%] md:w-[9%]'>
                         <h1 className=''>
-                            {items.book.price}
+                            {items.book?.price}
                         </h1>
                     </div>
                     <div className='w-[30%] md:w-[16%]'>
