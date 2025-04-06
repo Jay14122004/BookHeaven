@@ -38,7 +38,7 @@ function ViewBookDetail() {
     };
 
     const handleFavourite = async()=>{
-        const response = await axios.put("http://localhost:1000/api/v1/add-book-to-favourite",
+        const response = await axios.put("https://bookheaven-rpnh.onrender.com/api/v1/add-book-to-favourite",
             {},
             {headers}
         );
@@ -46,7 +46,7 @@ function ViewBookDetail() {
     };
 
     const handleCart = async()=>{
-        const response = await axios.put("http://localhost:1000/api/v1/add-to-cart",
+        const response = await axios.put("https://bookheaven-rpnh.onrender.com/api/v1/add-to-cart",
             {},
             {headers}
         );
@@ -54,7 +54,7 @@ function ViewBookDetail() {
     };
 
     const deleteBook = async()=>{
-        const response = await axios.delete("http://localhost:1000/api/v1/delete-book",{headers});
+        const response = await axios.delete("https://bookheaven-rpnh.onrender.com/api/v1/delete-book",{headers});
         alert(response.data.message);
         navigate("/all-books");
     }
