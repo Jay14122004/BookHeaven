@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import Loader from '../Loader/Loader'
 import { Link } from 'react-router-dom';
+import OrderHistoryPng from '../../assets/order-history.png'
 
 
 function UserOrderHistory() {
@@ -35,8 +36,8 @@ function UserOrderHistory() {
             <h1>
               No Order History
             </h1>
-            <img src="https://cdn-icons-png.flaticon.com/128/9961/9961218" alt="/" 
-              className='h-[20vh] mb-8'
+            <img src={OrderHistoryPng} alt="/" 
+              className='h-[20vh] mb-8 mt-4'
             />
           </div>
         </div>
