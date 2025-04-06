@@ -31,7 +31,7 @@ function UserOrderHistory() {
         </div>
       )}
       {OrderHistory && OrderHistory.length === 0 && (
-        <div className='h-[80vh] p-4 text-zinc-100'>
+        <div className='h-[100vh] p-4 text-zinc-100'>
           <div className='h-[100%] flex flex-col items-center justify-center'>
             <h1>
               No Order History
