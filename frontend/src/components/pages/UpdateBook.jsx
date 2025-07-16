@@ -62,7 +62,7 @@ const submit = async()=>{
   useEffect(()=>{
     const fetch = async ()=>{
       const response = await axios.get(
-        `http://localhost:1000/api/v1/get-book-by-id/${id}`,
+        `https://bookheaven-rpnh.onrender.com/api/v1/get-book-by-id/${id}`,
       );
 
       setData(response.data.data);
