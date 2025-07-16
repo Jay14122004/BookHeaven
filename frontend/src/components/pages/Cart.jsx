@@ -45,7 +45,6 @@ function Cart() {
         total += Number(items.price);
       });
       setTotal(total);
-      total=0;
     }
   },[Cart]);
 
